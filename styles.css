@@ -8,11 +8,6 @@ This is the header and navigation area
         font: 10px;
     }
     
-    #logo {
-        min-height: 10em;
-        max-height: 100px;
-    }
-    
     .nav {
         display: inline-flex;
         font: 600 1em 'Poppins', sans-serif;
@@ -32,9 +27,34 @@ This is the header and navigation area
         justify-content: center;
     }
     
+    #logo {
+        min-height: 10em;
+        max-height: 100px;
+    }
+    
+    .name {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    
     .heading h1 {
         margin: 1%;
         font: 600 3em 'Poppins', sans-serif;
+    }
+    
+    .heading h2 {
+        margin: 1%;
+        font: 600 2em 'Poppins', sans-serif;
+    }
+    
+    .nav {
+        display: inline-flex;
+        font: 600 1em 'Poppins', sans-serif;
+        flex: 1 1 100%;
+    }
+    
+    .nav h2 {
+        margin: .5em;
     }
     /*Big ol' banner in the center */
     
