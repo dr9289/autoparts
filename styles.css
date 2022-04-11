@@ -1,0 +1,178 @@
+    /* 
+
+This is the header and navigation area
+
+*/
+    
+    html {
+        font: 10px;
+    }
+    
+    #logo {
+        min-height: 10em;
+        max-height: 100px;
+    }
+    
+    .nav {
+        display: inline-flex;
+        font: 600 1em 'Poppins', sans-serif;
+        flex: 1 1 100%;
+    }
+    
+    .nav h2 {
+        margin: .5em;
+    }
+    
+    .heading {
+        display: inline-flex;
+        align-items: center;
+        flex: 1 1 100%;
+        min-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heading h1 {
+        margin: 1%;
+        font: 600 3em 'Poppins', sans-serif;
+    }
+    /*Big ol' banner in the center */
+    
+    .splash {
+        background-image: url("images/autoparts.jpg");
+        min-height: 50em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .splashBanner {
+        background-color: black;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .splash h2 {
+        font: italic 600 2em 'Poppins', sans-serif;
+        color: white;
+    }
+    /* product area */
+    
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+    
+    .productSection {
+        margin: 5%;
+    }
+    
+    .productHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .productHeader h3 {
+        font: 800 2em 'Poppins', sans-serif;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .productContainer {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .product {
+        display: inline-flex;
+        margin: 1em;
+        width: 20%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .product img {
+        border: #c1ab9a solid 5px;
+        min-height: 200px;
+        max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    .product h4 {
+        font: 600 1em 'Poppins', sans-serif;
+    }
+    /* 
+
+Team Member Area
+
+*/
+    
+    .teamSection {
+        font: 300 1em 'Poppins', sans-serif;
+        margin: 5%;
+    }
+    
+    .teamHeader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .teamHeader h3 {
+        font: 800 2em 'Poppins', sans-serif;
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .team {
+        display: inline-flex;
+        max-width: 100%;
+        flex: 1 1 33.3333%;
+    }
+    
+    .teamMem {
+        display: inline-flex;
+        margin: 1em;
+        width: 33%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .teamMem img {
+        border: #c1ab9a solid 5px;
+        min-height: 300px;
+        max-height: 500px;
+        min-width: 75%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    /* 
+
+Footer Area
+
+*/
+    
+    footer {
+        display: flex;
+        background-color: #53a0bb;
+        align-items: center;
+        justify-content: center;
+        font: 600 2em 'Poppins', sans-serif;
+    }
