@@ -1,152 +1,192 @@
-    /* 
-
-
-
-This is the header and navigation area
-
-
-
-*/
-    
-    html {
-        font: 10px;
-    }
-    
-    .heading {
-        display: inline-flex;
-        align-items: center;
-        width: 100%;
-    }
-    
-    #logo {
-        min-height: 10em;
-        max-height: 100px;
-    }
-    
-    .name {
-        display: inline-flex;
-        flex-wrap: wrap;
-    }
-    
-    .name h1 {
-        margin: 1%;
-        font: 600 3em 'Poppins', sans-serif;
-    }
-    
-    .name h2 {
-        margin: 1%;
-        color: #D96341;
-        font: 600 2em 'Poppins', sans-serif;
-    }
-    
-    .nav {
-        display: inline-flex;
-        font: 600 3em 'Poppins', sans-serif;
-        flex: 1 1 100%;
-        justify-content: space-evenly;
-    }
-    
-    .nav a {
-        margin: .5em;
-        color: #53a0bb;
-    }
-    /*
+        /*This is the header and navigation area */
+        
+        html {
+            font: 10px;
+        }
+        
+        .heading {
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+        }
+        
+        #logo {
+            min-height: 1em;
+            max-height: 10em;
+        }
+        
+        .name {
+            display: inline-flex;
+            flex-wrap: wrap;
+        }
+        
+        .name h1 {
+            margin: 1%;
+            font: 600 4vw 'Poppins', sans-serif;
+        }
+        
+        .name h2 {
+            margin: 1%;
+            color: #D96341;
+            font: 600 2vw 'Poppins', sans-serif;
+        }
+        
+        .nav {
+            display: inline-flex;
+            flex: 1 1 100%;
+            justify-content: space-evenly;
+        }
+        
+        .nav a {
+            font: 600 1.5vw 'Poppins', sans-serif;
+            margin: 1%;
+            color: #53a0bb;
+        }
+        /* On screens that are 1001px wide or more */
+        
+        @media screen and (min-width: 1001px) {
+            .dropdown {
+                display: none;
+            }
+        }
+        /* On screens that are 1000px wide or less */
+        
+        @media screen and (max-width: 1000px) {
+            .dropdown {
+                display: inline-block;
+            }
+            .dropdown img {
+                width: 10vw;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content a {
+                color: #D96341;
+                font: 600 2vw 'Poppins', sans-serif;
+            }
+            .nav {
+                display: none;
+            }
+        }
+        /*
     
     
     Big ol' banner in the center 
     
     
     */
-    
-    .splash {
-        background-image: url("images/autoparts.jpg");
-        min-height: 50em;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .splashBanner {
-        background-color: black;
-        min-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .splash h2 {
-        font: italic 600 2em 'Poppins', sans-serif;
-        color: white;
-    }
+        
+        .splash {
+            background-image: url("images/autoparts.jpg");
+            min-height: 50em;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .splashBanner {
+            background-color: black;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .splash h2 {
+            font: italic 600 4vw 'Poppins', sans-serif;
+            color: white;
+        }
+        /* 
     /* 
+                                                /* 
+    /* 
+                                                /* 
     
     
     product area 
     
     
     */
-    
-    .break {
-        flex-basis: 100%;
-        height: 0;
-    }
-    
-    .productSection {
-        margin: 5% 0;
-        display: inline-flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .productHeader {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .productHeader h3 {
-        font: 800 2em 'Poppins', sans-serif;
-        min-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .productContainer {
-        width: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .product {
-        display: inline-flex;
-        margin: 2%;
-        width: 40vh;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
-        flex: 2 0 0;
-        box-sizing: content-box;
-    }
-    
-    .product img {
-        object-fit: cover;
-        height: 25%;
-        width: 50%;
-        flex: 1 100%;
-        border: #c1ab9a solid 5px;
-    }
-    
-    .product h4 {
-        font: 600 1em 'Poppins', sans-serif;
-    }
+        
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+        
+        .productSection {
+            margin: 5% 0;
+            display: inline-flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .productHeader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .productHeader h3 {
+            font: 800 2em 'Poppins', sans-serif;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .productContainer {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .product {
+            display: inline-flex;
+            margin: 2%;
+            width: 40vh;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 2 0 0;
+            box-sizing: content-box;
+        }
+        
+        .product img {
+            object-fit: cover;
+            height: 25%;
+            width: 50%;
+            flex: 1 100%;
+            border: #c1ab9a solid 5px;
+        }
+        
+        .product h4 {
+            font: 600 1em 'Poppins', sans-serif;
+        }
+        /* 
     /* 
+                                                /* 
+    /* 
+                                                /* 
+    /* 
+                                                /* 
+    /* 
+                                                /* 
 
 
 
@@ -155,48 +195,56 @@ Team Member Area
 
 
 */
-    
-    .teamSection {
-        font: 300 1em 'Poppins', sans-serif;
-    }
-    
-    .teamHeader {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .teamHeader h3 {
-        font: 800 2em 'Poppins', sans-serif;
-        min-width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .team {
-        display: inline-flex;
-        flex: 1 1 0%;
-    }
-    
-    .teamMem {
-        display: inline-flex;
-        margin: 1em;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        flex: 1 1 0%;
-    }
-    
-    .teamMem img {
-        border: #c1ab9a solid 5px;
-        min-height: 300px;
-        max-height: 500px;
-        min-width: 75%;
-        max-width: 100%;
-        object-fit: cover;
-    }
+        
+        .teamSection {
+            font: 300 1em 'Poppins', sans-serif;
+        }
+        
+        .teamHeader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .teamHeader h3 {
+            font: 800 2em 'Poppins', sans-serif;
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .team {
+            display: inline-flex;
+            flex: 1 1 0%;
+        }
+        
+        .teamMem {
+            display: inline-flex;
+            margin: 1em;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            flex: 1 1 0%;
+        }
+        
+        .teamMem img {
+            border: #c1ab9a solid 5px;
+            min-height: 300px;
+            max-height: 500px;
+            min-width: 75%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+        /* 
     /* 
+                                                /* 
+    /* 
+                                                /* 
+    /* 
+                                                /* 
+    /* 
+                                                /* 
 
 
 
@@ -205,12 +253,12 @@ Footer Area
 
 
 */
-    
-    footer {
-        display: flex;
-        background-color: #53a0bb;
-        align-items: center;
-        justify-content: center;
-        font: 600 2em 'Poppins', sans-serif;
-        margin-top: 5%;
-    }
+        
+        footer {
+            display: flex;
+            background-color: #53a0bb;
+            align-items: center;
+            justify-content: center;
+            font: 600 2em 'Poppins', sans-serif;
+            margin-top: 5%;
+        }
