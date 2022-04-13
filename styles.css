@@ -163,7 +163,7 @@
             width: 25%;
             flex-flow: row wrap;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             flex: 2 0 0;
             box-sizing: content-box;
         }
@@ -172,7 +172,7 @@
             object-fit: cover;
             height: 10vh;
             width: 5vw;
-            flex: 1 100%;
+            flex: 1 1 100%;
             border: #c1ab9a solid 5px;
         }
         
@@ -218,7 +218,6 @@ Team Member Area
         .team {
             display: inline-flex;
             flex: 1 1 0%;
-            background-color: #D96341;
         }
         
         .teamMem {
@@ -230,6 +229,10 @@ Team Member Area
             flex: 1 1 100%;
             width: 33.33%;
             height: 100%;
+        }
+        
+        .teamMem p {
+            font: 300 1.5vh 'Poppins', sans-serif;
         }
         
         .teamMem img {
@@ -252,8 +255,7 @@ Footer Area
         
         footer {
             display: flex;
-            background-color: #53a0bb;
-            align-items: center;
+            background-color: rgba(83, 187, 162, .75);
             justify-content: center;
             font: 600 1.5vh 'Poppins', sans-serif;
             margin-top: 5%;
