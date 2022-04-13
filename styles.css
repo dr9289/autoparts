@@ -106,8 +106,11 @@
         }
         
         .splash h2 {
+            margin: 1%;
+            padding: 1%;
             font: italic 600 4vw 'Poppins', sans-serif;
             color: white;
+            text-align: center;
         }
         /* 
     /* 
